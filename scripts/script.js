@@ -160,7 +160,7 @@ function handleEvents(e) {
     //Superhero is added to favorites and saved in localstorage for persistency
     let reqId = parseInt(e.target.dataset.id);
     let sh_present = false;
-    if (favorites_SH.length > 0) {
+    if (favorites_SH && favorites_SH.length > 0) {
       favorites_SH.forEach(fav_sh => {
         if (fav_sh.id === reqId) {
           sh_present = true;
