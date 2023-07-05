@@ -28,7 +28,6 @@ async function fetchdetails() {
   let url = `https://gateway.marvel.com:443/v1/public/characters?limit=100&ts=1687506679909&apikey=e87961910e4b3dc107be2c88c022ad08&hash=90f5f206bffd371637962144c903c1e8`;
   let response = await fetch(url);
   let data = await response.json();
-  console.log(data.data.results)
 
   results = data.data.results
   superhero_list_render(results)
