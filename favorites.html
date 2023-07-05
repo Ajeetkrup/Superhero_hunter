@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorites</title>
+    <link rel="shortcut icon" type="image/png" href="images/3.jpg" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/favorites.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <div id="navigation">
+        <a href="index.html"><span>Home</span></a>
+        <a href="#"
+            style="text-decoration: none;font-size: 3rem;text-shadow: 223 355 brown;box-shadow: red;border: 1px solid #59d9ff;border-radius: 17px; color: white;background-color: rgb(132, 231, 238);"><span>Favorites</span></a>
+    </div>
+    <!-- Search Bar -->
+    <div id="searchBox">
+        <form onsubmit="event.preventDefault();" role="search">
+            <label for="search">Search for Superheroes</label>
+            <input id="searchInput" type="search" placeholder="Search Superhero..." autofocus required />
+            <button type="submit" id="go">Go</button>
+        </form>
+    </div>
+    <!-- Favorites Super Hero List -->
+    <div class="fav-superheroes-list">
+        <ul id="fav-superheroes-list">
+
+        </ul>
+    </div>
+    <script src="scripts/favorites.js"></script>
+</body>
+
+</html>

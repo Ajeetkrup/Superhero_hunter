@@ -1,0 +1,50 @@
+/* Favorites Superhero list */
+#fav-superheroes-list {
+    margin: 0 calc(39.2% - -4px);
+    list-style: none;
+}
+
+@media (max-width: 1814px) {
+  #fav-superheroes-list {
+    margin: 0 calc(38.2% - 0px);
+    list-style: none;
+  }
+}
+@media (max-width: 1547px) {
+  #fav-superheroes-list {
+    margin:0 calc(36.2% - 0px);
+    list-style: none;
+  }
+}
+
+@media (max-width: 1261px) {
+  #fav-superheroes-list {
+    margin:0 calc(33.2% - 0px);
+    list-style: none;
+  }
+}
+
+@media (max-width: 1045px) {
+  #fav-superheroes-list {
+    margin:0 calc(28.2% - 0px);
+    list-style: none;
+  }
+}
+@media (max-width: 710px) {
+  #fav-superheroes-list {
+    margin:0;
+    list-style: none;
+  }
+}
+
+@media (max-width: 415px) {
+  #fav-superheroes-list {
+    margin-left: -33px;
+  }
+}
+
+@media (max-width: 334px){
+  #fav-superheroes-list {
+      margin-left: -54px;
+  }
+}
