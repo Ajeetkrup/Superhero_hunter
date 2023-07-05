@@ -171,7 +171,7 @@ function handleEvents(e) {
       let sh = results.filter(function (temp) {
         return temp.id === reqId;
       })
-
+      favorites_SH = []
       favorites_SH.push(sh[0]);
       localStorage.setItem('fav_superHero', JSON.stringify(favorites_SH));
       alert(`Congratulations! ${sh[0].name} has been added successfully to the favorites.`);
