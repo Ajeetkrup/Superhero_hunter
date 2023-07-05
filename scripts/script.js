@@ -167,7 +167,7 @@ function handleEvents(e) {
         }
       });
     }
-    if (!sh_present) {
+    if (!sh_present || !favorites_SH) {
       let sh = results.filter(function (temp) {
         return temp.id === reqId;
       })
