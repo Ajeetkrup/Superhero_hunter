@@ -24,6 +24,9 @@ go.addEventListener('click', function () {
 
 //Rendering favorite super heroes list
 function fav_superhero_list_render(results) {
+  if(!favorites_SH){
+    favorites_SH = [];
+  }
   if(favorites_SH.length === 0){
     fav_superhero_list.innerHTML = 'No superHero PRESENT.Sorry, go to home and add your superheroes to favorites.';
     fav_superhero_list.style.fontSize = '2rem';
