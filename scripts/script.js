@@ -157,6 +157,9 @@ var favorites_SH = JSON.parse(localStorage.getItem('fav_superHero'));
 function handleEvents(e) {
   if (e.target.className === 'favorite') {
     //Superhero is added to favorites and saved in localstorage for persistency
+    if(!favorites_SH){
+      favorites_SH = [];
+    }
     let reqId = parseInt(e.target.dataset.id);
     let sh_present = false;
     if (favorites_SH && favorites_SH.length > 0) {
@@ -166,11 +169,10 @@ function handleEvents(e) {
         }
       });
     }
-    if (!sh_present || !favorites_SH) {
+    if (!sh_present || (favorites_SH && favorites_SH.length === 0)) {
       let sh = results.filter(function (temp) {
         return temp.id === reqId;
       })
-      favorites_SH = []
       favorites_SH.push(sh[0]);
       localStorage.setItem('fav_superHero', JSON.stringify(favorites_SH));
       alert(`Congratulations! ${sh[0].name} has been added successfully to the favorites.`);
